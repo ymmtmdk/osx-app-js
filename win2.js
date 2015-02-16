@@ -6,6 +6,8 @@
 
   ObjC.registerSubclass({
     name: 'WinDelegate',
+    superclass: 'NSObject',
+    protocols: ['NSWindowDelegate'],
     methods: {
       'windowWillClose:': {
         types: ['void', ['id']],
